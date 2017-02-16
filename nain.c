@@ -48,7 +48,7 @@ int main (){
         if ((date<120)&(date>=31))one(d,ye);
 	if ((date<240)&(date>=121))two(d,ye);
 	if ((date<=365)&(date>=241))three(d,ye);
-
-
+	cout << "Cуммa вклада на момент окончания срока составляет:."
+	cout << s;
 	return 0;
 }
