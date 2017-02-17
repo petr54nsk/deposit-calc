@@ -45,10 +45,10 @@ int main (){
 	int ye,date,d,m,c;
 	cout << "Enter the Deposit amount:";
 	scanf("%d",&ye);cout << endl;
-	if (ye<10) return 0;
+	if (ye<10){cout << "incorrect data"; return 0;};
 	cout << "Enter the Deposit term:";
 	scanf("%d",&date);cout << endl;
-	if ((date>365)||(date<=0))return 0;
+	if ((date>365)||(date<=0)){cout << "incorrect data"; return 0;};
 	if (ye<100) d=1;
 		else d=2;
 	if (date<=30) c=zero(d,ye);
