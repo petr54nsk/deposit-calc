@@ -1,7 +1,16 @@
 CC = g++
+MO = ./obj/main.o
+DO = ./obj/deposit.o
+MC = ./src/main.cpp
+DC = ./src/deposit.cpp
 
-all: nain.o
-	$(CC) nain.o -o nain
+all: $(DO) $(MO)
+	$(CC) $(MO) $(DO) -o ./bin/deposit-calc
 
-nain.o: nain.cpp
-	$(CC) -c nain.cpp -o nain.o
+$(DO): $(DC)
+	$(CC) -c $(DC) -o $(DO)
+
+$(MO): $(MC)
+	$(CC)  -c $(MC) -o $(MO)
+clean:
+	rm ./obj/*.o
