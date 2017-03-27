@@ -1,6 +1,6 @@
 CC = g++
-MO = ./obj/main.o
-DO = ./obj/deposit.o
+MO = ./build/main.o
+DO = ./build/deposit.o
 MC = ./src/main.cpp
 DC = ./src/deposit.cpp
 
@@ -13,4 +13,4 @@ $(DO): $(DC)
 $(MO): $(MC)
 	$(CC)  -c $(MC) -o $(MO)
 clean:
-	rm ./obj/*.o
+	rm ./build/*.o
