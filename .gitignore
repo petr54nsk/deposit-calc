@@ -1,2 +1,2 @@
-/obj/*.o
+/build/*.o
 /bin
