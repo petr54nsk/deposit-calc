@@ -34,4 +34,5 @@ $(VTO): $(VT)
 	 $(CC) -c $(VT) -o $(VTO)
 
 clean:
-	rm ./build/*.o
+	rm ./build/test/*.o
+	rm ./build/src/*.o
