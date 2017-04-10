@@ -10,8 +10,7 @@ MTO = ./build/test/main_test.o
 DTO = ./build/test/deposit_test.o
 VTO = ./build/test/validation_test.o
 
-
-all: dc test
+all: dc test 
 
 dc: $(DO) $(MO)
 	$(CC) $(MO) $(DO) -o ./bin/deposit-calc
