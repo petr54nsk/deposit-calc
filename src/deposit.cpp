@@ -19,8 +19,8 @@ int two(int &d, int ye){
 	int s=ye;
 	cout << d<< endl;
 	double p;
-	if (d==1)p = 0.6;
-	if (d==2)p = 0.8;
+	if (d==1)p = 0.06;
+	if (d==2)p = 0.08;
 	s=s+s*p;
 	return s;
 
