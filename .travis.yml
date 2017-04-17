@@ -3,4 +3,4 @@ compiler: g++
 
 script:
 - make
-- deposit-calc_test
+
